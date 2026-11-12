@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "download_limit_bytes": 10000000000,
+  "chartqa_revision": "044eabfc306abfe9340c5741f0093aefc5973d06",
+  "vistext_revision": "24df7d32a39652c375b821f00f77845fb62d28ee",
+  "questions_per_partition": 50,
+  "training_charts": 20,
+  "model_seconds": 1500,
+  "total_gpu_seconds": 3600,
+  "num_beams": 4,
+  "unichart_max_new_tokens": 128,
+  "deplot_max_new_tokens": 512,
+  "models": {
+    "unichart": {"id": "ahmed-masry/unichart-chartqa-960", "revision": "e5eb1e52c1d775e0f3febaddc7fc3559e80cb989", "license": "gpl-3.0"},
+    "deplot": {"id": "google/deplot", "revision": "6e76d62430da16986be3426bae32301fb9115397", "license": "apache-2.0"}
+  }
+}

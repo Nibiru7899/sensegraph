@@ -1,0 +1,1137 @@
+{
+  "schema_version": 2,
+  "count": 100,
+  "splits": {
+    "train": 70,
+    "val": 15,
+    "test": 15
+  },
+  "chart_types": {
+    "bar": 34,
+    "grouped_bar": 33,
+    "line": 33
+  },
+  "resolutions_by_chart_type": {
+    "bar": {
+      "480x360": 13,
+      "640x480": 11,
+      "800x500": 10
+    },
+    "grouped_bar": {
+      "640x480": 9,
+      "800x500": 12,
+      "480x360": 12
+    },
+    "line": {
+      "480x360": 15,
+      "640x480": 8,
+      "800x500": 10
+    }
+  },
+  "node_counts": {
+    "min": 26,
+    "max": 66,
+    "mean": 40.4,
+    "total": 4040
+  },
+  "node_types": {
+    "axis": 200,
+    "axis_label": 200,
+    "tick": 963,
+    "tick_label": 963,
+    "title": 100,
+    "bar": 522,
+    "series": 197,
+    "legend_item": 197,
+    "point": 389,
+    "line_segment": 309
+  },
+  "relations": {
+    "labels": 1163,
+    "belongs_to": 2183,
+    "maps_to_axis": 1822,
+    "maps_to_tick": 911,
+    "next_in_series": 714,
+    "represents_series": 197,
+    "greater_than": 4635,
+    "less_than": 4635,
+    "connected_to": 618,
+    "equal_to": 82
+  },
+  "qa_operations": {
+    "lookup": 100,
+    "maximum": 100,
+    "minimum": 100,
+    "difference": 100,
+    "comparison": 100,
+    "count": 100,
+    "series_difference": 66
+  },
+  "question_count": 666,
+  "evidence_coverage": 1.0,
+  "annotation_fields": {
+    "bbox": "all synthetic nodes",
+    "numeric_value": "data marks and numeric y ticks",
+    "numeric_missing": "masked, never treated as zero labels"
+  },
+  "invalid_samples": [],
+  "visual_review_ids": [
+    "synthetic-00000",
+    "synthetic-00001",
+    "synthetic-00002",
+    "synthetic-00072",
+    "synthetic-00070",
+    "synthetic-00071",
+    "synthetic-00087",
+    "synthetic-00085",
+    "synthetic-00086"
+  ],
+  "leakage": {
+    "violations": [],
+    "exact_duplicates": [],
+    "near_duplicates": [],
+    "cross_source_candidates": [],
+    "near_duplicate_threshold": 4,
+    "method": "64-bit grayscale difference hash; candidates require visual review, not proof of common source",
+    "limits": "Only acquired samples checked; hash distance misses some semantic/rerendered overlap"
+  },
+  "batch_smoke": {
+    "images": [
+      3,
+      3,
+      480,
+      640
+    ],
+    "valid_pixels": 652800,
+    "node_features": [
+      106,
+      11
+    ],
+    "candidate_edges": [
+      2,
+      3712
+    ],
+    "edge_labels": [
+      3712,
+      10
+    ],
+    "node_types": [
+      106
+    ],
+    "numerical_labels": [
+      106
+    ],
+    "evidence_index": [
+      2,
+      445
+    ],
+    "questions": 20,
+    "finite_features": true,
+    "input_graph_keys": [
+      "batch",
+      "edge_index",
+      "num_nodes",
+      "ptr",
+      "x"
+    ],
+    "metadata": [
+      {
+        "id": "synthetic-00000",
+        "split": "train",
+        "template_id": "train_sans",
+        "proposal_source": "renderer_ground_truth_ORACLE_training_only",
+        "node_ids": [
+          "axis:x",
+          "axis_label:x",
+          "tick:x:0",
+          "tick_label:x:0",
+          "tick:x:1",
+          "tick_label:x:1",
+          "tick:x:2",
+          "tick_label:x:2",
+          "tick:x:3",
+          "tick_label:x:3",
+          "axis:y",
+          "axis_label:y",
+          "tick:y:0",
+          "tick_label:y:0",
+          "tick:y:1",
+          "tick_label:y:1",
+          "tick:y:2",
+          "tick_label:y:2",
+          "tick:y:3",
+          "tick_label:y:3",
+          "tick:y:4",
+          "tick_label:y:4",
+          "title",
+          "mark:0:0",
+          "mark:0:1",
+          "mark:0:2",
+          "mark:0:3",
+          "series:0",
+          "legend:0"
+        ]
+      },
+      {
+        "id": "synthetic-00001",
+        "split": "train",
+        "template_id": "train_serif",
+        "proposal_source": "renderer_ground_truth_ORACLE_training_only",
+        "node_ids": [
+          "axis:x",
+          "axis_label:x",
+          "tick:x:0",
+          "tick_label:x:0",
+          "tick:x:1",
+          "tick_label:x:1",
+          "tick:x:2",
+          "tick_label:x:2",
+          "axis:y",
+          "axis_label:y",
+          "tick:y:0",
+          "tick_label:y:0",
+          "tick:y:1",
+          "tick_label:y:1",
+          "tick:y:2",
+          "tick_label:y:2",
+          "tick:y:3",
+          "tick_label:y:3",
+          "tick:y:4",
+          "tick_label:y:4",
+          "title",
+          "mark:0:0",
+          "mark:0:1",
+          "mark:0:2",
+          "mark:1:0",
+          "mark:1:1",
+          "mark:1:2",
+          "mark:2:0",
+          "mark:2:1",
+          "mark:2:2",
+          "series:0",
+          "legend:0",
+          "series:1",
+          "legend:1",
+          "series:2",
+          "legend:2"
+        ]
+      },
+      {
+        "id": "synthetic-00002",
+        "split": "train",
+        "template_id": "train_sans",
+        "proposal_source": "renderer_ground_truth_ORACLE_training_only",
+        "node_ids": [
+          "axis:x",
+          "axis_label:x",
+          "tick:x:0",
+          "tick_label:x:0",
+          "tick:x:1",
+          "tick_label:x:1",
+          "tick:x:2",
+          "tick_label:x:2",
+          "tick:x:3",
+          "tick_label:x:3",
+          "axis:y",
+          "axis_label:y",
+          "tick:y:0",
+          "tick_label:y:0",
+          "tick:y:1",
+          "tick_label:y:1",
+          "tick:y:2",
+          "tick_label:y:2",
+          "tick:y:3",
+          "tick_label:y:3",
+          "tick:y:4",
+          "tick_label:y:4",
+          "title",
+          "mark:0:0",
+          "mark:0:1",
+          "mark:0:2",
+          "mark:0:3",
+          "segment:0:0",
+          "segment:0:1",
+          "segment:0:2",
+          "mark:1:0",
+          "mark:1:1",
+          "mark:1:2",
+          "mark:1:3",
+          "segment:1:0",
+          "segment:1:1",
+          "segment:1:2",
+          "series:0",
+          "legend:0",
+          "series:1",
+          "legend:1"
+        ]
+      }
+    ],
+    "device": "cpu"
+  },
+  "all_split_loading": {
+    "train": {
+      "loaded_charts": 70,
+      "batches": 18
+    },
+    "val": {
+      "loaded_charts": 15,
+      "batches": 4
+    },
+    "test": {
+      "loaded_charts": 15,
+      "batches": 4
+    }
+  },
+  "baseline_integrity": {
+    "changed_protected_files": [],
+    "protected_files": 330,
+    "allowed_bookkeeping_updates": [
+      "experiments/download_ledger.json"
+    ],
+    "recomputed_baseline_scores": {
+      "unichart": {
+        "overall": {
+          "denominator": 100,
+          "answered": 100,
+          "exact_correct": 58,
+          "relaxed_correct": 65,
+          "exact_accuracy": 0.58,
+          "relaxed_accuracy": 0.65,
+          "coverage": 1.0
+        },
+        "matches_baseline": true
+      },
+      "deplot": {
+        "overall": {
+          "denominator": 100,
+          "answered": 15,
+          "exact_correct": 12,
+          "relaxed_correct": 12,
+          "exact_accuracy": 0.12,
+          "relaxed_accuracy": 0.12,
+          "coverage": 0.15
+        },
+        "matches_baseline": true
+      }
+    }
+  },
+  "limitations": [
+    "100-chart pipeline validation, not training or generalization evidence",
+    "Renderer GT proposals are oracle training inputs, not a detector",
+    "No cached learned visual features or trained GNN"
+  ],
+  "tests_passed": 67,
+  "created_at": "2026-11-03T18:25:30+05:30",
+  "real_mapping": {
+    "chartqa": [
+      {
+        "id": "00006834003065",
+        "chart_type": "h_bar",
+        "nodes": 20,
+        "pixel_boxes": 19,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00035547003867",
+        "chart_type": "h_bar",
+        "nodes": 17,
+        "pixel_boxes": 16,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00035547003876",
+        "chart_type": "line",
+        "nodes": 91,
+        "pixel_boxes": 82,
+        "issues": [
+          {
+            "node": "mark:1:13",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 557.0,
+              "y": 413.0,
+              "w": 40.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:1:15",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 636.0,
+              "y": 418.0,
+              "w": 39.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:5",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 243.0,
+              "y": 499.0,
+              "w": 40.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:12",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 518.0,
+              "y": 513.0,
+              "w": 39.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:3:8",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 361.0,
+              "y": 518.0,
+              "w": 39.0,
+              "h": 0.0
+            }
+          }
+        ],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00097754005965",
+        "chart_type": "h_bar",
+        "nodes": 21,
+        "pixel_boxes": 20,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00108924005661",
+        "chart_type": "line",
+        "nodes": 62,
+        "pixel_boxes": 54,
+        "issues": [
+          {
+            "node": "mark:0:0",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 43.0,
+              "y": 109.0,
+              "w": 90.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:3:6",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 587.0,
+              "y": 247.0,
+              "w": 91.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:4:6",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 587.0,
+              "y": 375.0,
+              "w": 91.0,
+              "h": 0.0
+            }
+          }
+        ],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00268016000783",
+        "chart_type": "h_bar",
+        "nodes": 17,
+        "pixel_boxes": 16,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00268016000832",
+        "chart_type": "line",
+        "nodes": 30,
+        "pixel_boxes": 28,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00309421021808",
+        "chart_type": "h_bar",
+        "nodes": 12,
+        "pixel_boxes": 11,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00326327000592",
+        "chart_type": "line",
+        "nodes": 72,
+        "pixel_boxes": 67,
+        "issues": [
+          {
+            "node": "mark:3:9",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 584.0,
+              "y": 495.0,
+              "w": 55.0,
+              "h": 0.0
+            }
+          }
+        ],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00326327001359",
+        "chart_type": "h_bar",
+        "nodes": 13,
+        "pixel_boxes": 12,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00349887008643",
+        "chart_type": "h_bar",
+        "nodes": 12,
+        "pixel_boxes": 11,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00784700010464",
+        "chart_type": "h_bar",
+        "nodes": 33,
+        "pixel_boxes": 32,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00881004009933",
+        "chart_type": "line",
+        "nodes": 78,
+        "pixel_boxes": 49,
+        "issues": [
+          {
+            "node": "mark:0:1",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 122.0,
+              "y": 345.0,
+              "w": 44.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:2",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 166.0,
+              "y": 345.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:3",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 211.0,
+              "y": 345.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:7",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 390.0,
+              "y": 378.0,
+              "w": 44.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:8",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 434.0,
+              "y": 378.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:9",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 479.0,
+              "y": 378.0,
+              "w": 44.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:10",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 523.0,
+              "y": 378.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:11",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 568.0,
+              "y": 378.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:12",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 613.0,
+              "y": 378.0,
+              "w": 44.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:13",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 657.0,
+              "y": 378.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:1:0",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 256.0,
+              "y": 335.0,
+              "w": 44.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:1:1",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 300.0,
+              "y": 335.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:1:3",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 390.0,
+              "y": 381.0,
+              "w": 44.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:1:4",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 434.0,
+              "y": 381.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:1:5",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 479.0,
+              "y": 381.0,
+              "w": 44.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:1:6",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 523.0,
+              "y": 381.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:1:9",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 657.0,
+              "y": 394.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:2",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 166.0,
+              "y": 463.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:4",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 256.0,
+              "y": 483.0,
+              "w": 44.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:5",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 300.0,
+              "y": 483.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:6",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 345.0,
+              "y": 483.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:9",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 479.0,
+              "y": 483.0,
+              "w": 44.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:10",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 523.0,
+              "y": 483.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:11",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 568.0,
+              "y": 483.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:13",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 657.0,
+              "y": 456.0,
+              "w": 45.0,
+              "h": 0.0
+            }
+          }
+        ],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00916448003743",
+        "chart_type": "h_bar",
+        "nodes": 16,
+        "pixel_boxes": 15,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "00989191017734",
+        "chart_type": "line",
+        "nodes": 28,
+        "pixel_boxes": 27,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "01001540004358",
+        "chart_type": "line",
+        "nodes": 103,
+        "pixel_boxes": 94,
+        "issues": [
+          {
+            "node": "mark:0:0",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 61.0,
+              "y": 188.0,
+              "w": 24.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:1:11",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 326.0,
+              "y": 390.0,
+              "w": 24.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:1:23",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 615.0,
+              "y": 394.0,
+              "w": 24.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:9",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 278.0,
+              "y": 422.0,
+              "w": 24.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:11",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 326.0,
+              "y": 420.0,
+              "w": 24.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:2:13",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 374.0,
+              "y": 426.0,
+              "w": 24.0,
+              "h": 0.0
+            }
+          }
+        ],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "01200566001630",
+        "chart_type": "h_bar",
+        "nodes": 23,
+        "pixel_boxes": 22,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "01503134001790",
+        "chart_type": "h_bar",
+        "nodes": 17,
+        "pixel_boxes": 16,
+        "issues": [],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "01503134001823",
+        "chart_type": "line",
+        "nodes": 37,
+        "pixel_boxes": 32,
+        "issues": [
+          {
+            "node": "mark:0:1",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 134.0,
+              "y": 141.0,
+              "w": 76.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:5",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 439.0,
+              "y": 207.0,
+              "w": 76.0,
+              "h": 0.0
+            }
+          },
+          {
+            "node": "mark:0:7",
+            "reason": "zero-area source box retained without invented padding",
+            "source_bbox": {
+              "x": 592.0,
+              "y": 198.0,
+              "w": 76.0,
+              "h": 0.0
+            }
+          }
+        ],
+        "matches_baseline_image": true
+      },
+      {
+        "id": "01606743005377",
+        "chart_type": "h_bar",
+        "nodes": 14,
+        "pixel_boxes": 13,
+        "issues": [],
+        "matches_baseline_image": true
+      }
+    ],
+    "vistext": [
+      {
+        "id": "vistext:train:1",
+        "nodes": 56,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": [
+          "Year: Dec 31, 2005; Ticket price in U.S. dollars: 62.38",
+          "Year: Dec 31, 2006; Ticket price in U.S. dollars: 67.11"
+        ]
+      },
+      {
+        "id": "vistext:train:2",
+        "nodes": 67,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": [
+          "Month: Dec 31, 2017; Number of viewers in thousands: 5.37",
+          "Month: Dec 31, 2018; Number of viewers in thousands: 14.53"
+        ]
+      },
+      {
+        "id": "vistext:train:4",
+        "nodes": 74,
+        "local_rectangles": 16,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": []
+      },
+      {
+        "id": "vistext:train:5",
+        "nodes": 50,
+        "local_rectangles": 10,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": []
+      },
+      {
+        "id": "vistext:train:6",
+        "nodes": 62,
+        "local_rectangles": 14,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": []
+      },
+      {
+        "id": "vistext:train:7",
+        "nodes": 36,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": []
+      },
+      {
+        "id": "vistext:train:8",
+        "nodes": 56,
+        "local_rectangles": 11,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": []
+      },
+      {
+        "id": "vistext:train:10",
+        "nodes": 50,
+        "local_rectangles": 10,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": []
+      },
+      {
+        "id": "vistext:train:11",
+        "nodes": 61,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": [
+          "Year: Dec 31, 2003; Total prescriptions in millions: 87.27",
+          "Year: Dec 31, 2004; Total prescriptions in millions: 86.93"
+        ]
+      },
+      {
+        "id": "vistext:train:12",
+        "nodes": 65,
+        "local_rectangles": 15,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": []
+      },
+      {
+        "id": "vistext:train:13",
+        "nodes": 59,
+        "local_rectangles": 10,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": []
+      },
+      {
+        "id": "vistext:train:14",
+        "nodes": 104,
+        "local_rectangles": 20,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": []
+      },
+      {
+        "id": "vistext:train:15",
+        "nodes": 49,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": [
+          "Year: Dec 31, 2007; Turnover in million GBP: 3131",
+          "Year: Dec 31, 2008; Turnover in million GBP: 2964"
+        ]
+      },
+      {
+        "id": "vistext:train:16",
+        "nodes": 52,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": [
+          "Year: Dec 31, 1999; Per capita consumption in pounds: 2.01",
+          "Year: Dec 31, 2000; Per capita consumption in pounds: 1.5"
+        ]
+      },
+      {
+        "id": "vistext:train:17",
+        "nodes": 60,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": [
+          "Year: Dec 31, 2006; Revenue in million U.S. dollars: 1513",
+          "Year: Dec 31, 2007; Revenue in million U.S. dollars: 2152"
+        ]
+      },
+      {
+        "id": "vistext:train:19",
+        "nodes": 47,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": [
+          "Year: Dec 31, 2007; Sales volume in tonnes: 140398",
+          "Year: Dec 31, 2008; Sales volume in tonnes: 134122"
+        ]
+      },
+      {
+        "id": "vistext:train:20",
+        "nodes": 59,
+        "local_rectangles": 11,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": []
+      },
+      {
+        "id": "vistext:train:21",
+        "nodes": 48,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": [
+          "Year: Dec 31, 2009; Annual spending in million U.S. dollars: 0.0629",
+          "Year: Dec 31, 2010; Annual spending in million U.S. dollars: 0.2599"
+        ]
+      },
+      {
+        "id": "vistext:train:24",
+        "nodes": 58,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": [
+          "Year: Dec 31, 2004; Age in years: 54",
+          "Year: Dec 31, 2005; Age in years: 53"
+        ]
+      },
+      {
+        "id": "vistext:train:25",
+        "nodes": 51,
+        "local_rectangles": 0,
+        "pixel_boxes": 0,
+        "unsupported_group_transforms": 0,
+        "temporal_description_examples": [
+          "Year: Dec 31, 1998; Youth unemployment rate: 0.156",
+          "Year: Dec 31, 1999; Youth unemployment rate: 0.1462"
+        ]
+      }
+    ],
+    "limitations": [
+      "Real mappings are partial and are not fed into the synthetic supervised dataset",
+      "No invented QA evidence or inferred VisText pixel transform"
+    ]
+  },
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "torch-geometric": "2.7.0",
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.6",
+    "Pillow": "13.0.0"
+  },
+  "implementation_sha256": {
+    "src/sensegraph/synthetic.py": "6ac73111037c2158ab26e2602cc1a50f5cf794abf7f752c9fd09265142620e87",
+    "src/sensegraph/structural_validation.py": "8f23bdc0d9793cfb91c4fa2e4fcaebd3afe3e65862fbb443f4f6409d1e44412a",
+    "src/sensegraph/graph_data.py": "81ee5d28886f2e2d7253ecc11cb49bcd6e542eb5c0f05375c98c4f5fe2a42fd3",
+    "src/sensegraph/leakage.py": "8be45254de77a04e4c2c42e776296d88afb59d184acf415eb4e03574a795268e",
+    "src/sensegraph/real_mapping.py": "e1487a28e3c084fdff1191d4383e71d9967cca677495e73bc56cb3958fb2bca0",
+    "src/sensegraph/structural_cli.py": "f4764e90d9550ece70b70d33565f2f3935f966fa23c4b83c1f88227ccc4147ad"
+  },
+  "accounted_download_bytes": 5848020513
+}

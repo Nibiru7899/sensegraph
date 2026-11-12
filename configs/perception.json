@@ -1,0 +1,18 @@
+{
+  "seed": 20261104,
+  "train_count": 128,
+  "val_count": 30,
+  "steps": 240,
+  "one_batch_steps": 20,
+  "lr": 0.001,
+  "batch_size": 1,
+  "score_threshold": 0.25,
+  "iou_thresholds": [0.5, 0.75],
+  "max_detections": 100,
+  "session_seconds": 600,
+  "gate_macro_recall50": 0.5,
+  "gate_macro_ap50": 0.3,
+  "gate_point_segment_recall50": 0.2,
+  "weights_url": "https://download.pytorch.org/models/fasterrcnn_mobilenet_v3_large_320_fpn-907ea3f9.pth",
+  "weights_path": ".cache/torch/hub/checkpoints/fasterrcnn_mobilenet_v3_large_320_fpn-907ea3f9.pth"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "seed": 1729,
+  "count": 100,
+  "output": "data/synthetic/v2",
+  "splits": {"train": 70, "val": 15, "test": 15},
+  "chart_types": ["bar", "grouped_bar", "line"],
+  "resolutions": [[480, 360], [640, 480], [800, 500]],
+  "dpi": [80, 100],
+  "category_counts": [3, 4, 5, 6],
+  "series_counts": [2, 3],
+  "value_ranges": [[-20, 50], [0, 100], [-100, 100]],
+  "templates": {
+    "train": [
+      {"id": "train_sans", "font": "DejaVu Sans", "palette": ["#285f9e", "#b74b36", "#4c8755"], "background": "#ffffff", "grid": true, "layout": [0.17, 0.20, 0.78, 0.64], "rotation": 0},
+      {"id": "train_serif", "font": "DejaVu Serif", "palette": ["#6c5093", "#267b77", "#b17a30"], "background": "#f7f5ed", "grid": false, "layout": [0.19, 0.23, 0.75, 0.60], "rotation": 25}
+    ],
+    "val": [
+      {"id": "val_mono", "font": "DejaVu Sans Mono", "palette": ["#785b28", "#336d87", "#aa425b"], "background": "#f2f6fa", "grid": true, "layout": [0.20, 0.22, 0.73, 0.61], "rotation": 15}
+    ],
+    "test": [
+      {"id": "test_serif", "font": "DejaVu Serif", "palette": ["#237050", "#8d4a20", "#38589c"], "background": "#faf3f3", "grid": false, "layout": [0.18, 0.25, 0.76, 0.57], "rotation": 35}
+    ]
+  },
+  "near_duplicate_hamming_threshold": 4
+}

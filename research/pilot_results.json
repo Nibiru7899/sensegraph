@@ -1,0 +1,1071 @@
+{
+  "created_at": "2026-11-03T15:14:29+05:30",
+  "kind": "executed_local_validation_pilot_not_research_validation",
+  "tests_passed": 44,
+  "metrics": {
+    "unichart": {
+      "model": "unichart",
+      "run": {
+        "model": "unichart",
+        "checkpoint": {
+          "id": "ahmed-masry/unichart-chartqa-960",
+          "revision": "e5eb1e52c1d775e0f3febaddc7fc3559e80cb989",
+          "license": "gpl-3.0"
+        },
+        "config": {
+          "schema_version": 1,
+          "seed": 42,
+          "download_limit_bytes": 10000000000,
+          "chartqa_revision": "044eabfc306abfe9340c5741f0093aefc5973d06",
+          "vistext_revision": "24df7d32a39652c375b821f00f77845fb62d28ee",
+          "questions_per_partition": 50,
+          "training_charts": 20,
+          "model_seconds": 1500,
+          "total_gpu_seconds": 3600,
+          "num_beams": 4,
+          "unichart_max_new_tokens": 128,
+          "deplot_max_new_tokens": 512,
+          "models": {
+            "unichart": {
+              "id": "ahmed-masry/unichart-chartqa-960",
+              "revision": "e5eb1e52c1d775e0f3febaddc7fc3559e80cb989",
+              "license": "gpl-3.0"
+            },
+            "deplot": {
+              "id": "google/deplot",
+              "revision": "6e76d62430da16986be3426bae32301fb9115397",
+              "license": "apache-2.0"
+            }
+          }
+        },
+        "records_sha256": "fcfcaec480cd0977ac5a79a8bd671aa3afec0fa9166af1a6ccbc2a37dd93d5fd",
+        "manifest_sha256": "134639355f93393a9006f36fdb290100f1639a185681e53be2ebd44be79d3cc1",
+        "rule_version": "1.0",
+        "rules_sha256": "a615be2714d65b3fb1d069ab316dae4cac742a5b3b1de9d6cd6687731655990f",
+        "complete": true,
+        "processed": 100,
+        "expected": 100,
+        "evidence_localization": null,
+        "calibrated_confidence": null,
+        "kind": "real_model_inference",
+        "implementation_sha256": {
+          "models.py": "6a6a18717d87b2da49f67a7e6c64f7cf97b9d94702b529764a29354a2f98e28c",
+          "runner.py": "6cf983fd816baaa00d04df7a601c2527e5e89b3b9984712d03389d6246e34fbc",
+          "reasoning.py": "a615be2714d65b3fb1d069ab316dae4cac742a5b3b1de9d6cd6687731655990f"
+        },
+        "precision": "torch.float16",
+        "precision_fallback": null,
+        "peak_allocated_bytes": 683321856,
+        "peak_reserved_bytes": 792723456,
+        "elapsed_seconds": 54.15599999995902
+      },
+      "overall": {
+        "denominator": 100,
+        "answered": 100,
+        "exact_correct": 58,
+        "relaxed_correct": 65,
+        "exact_accuracy": 0.58,
+        "relaxed_accuracy": 0.65,
+        "coverage": 1.0
+      },
+      "partitions": {
+        "augmented": {
+          "denominator": 50,
+          "answered": 50,
+          "exact_correct": 39,
+          "relaxed_correct": 41,
+          "exact_accuracy": 0.78,
+          "relaxed_accuracy": 0.82,
+          "coverage": 1.0
+        },
+        "human": {
+          "denominator": 50,
+          "answered": 50,
+          "exact_correct": 19,
+          "relaxed_correct": 24,
+          "exact_accuracy": 0.38,
+          "relaxed_accuracy": 0.48,
+          "coverage": 1.0
+        }
+      },
+      "missing_predictions": [],
+      "scoring_sha256": "c496ac0727824638f29d2a255cef1d851682a2857570da6f507277992cd656b3",
+      "metric_definition": {
+        "exact": "case-sensitive equality after trimming outer whitespace",
+        "relaxed": "Pix2Struct official ChartQA relaxed_correctness: percent-to-fraction conversion, <=5% relative error, lowercase string fallback for zero/nonnumeric targets",
+        "source": "https://github.com/google-research/pix2struct/blob/main/pix2struct/metrics.py"
+      },
+      "latency": {
+        "count": 100,
+        "median_seconds": 0.14000000001396984,
+        "p95_seconds": 0.15600000007543713,
+        "includes": "per-question preprocessing, decoding, and executor; cached extraction explicitly marked"
+      },
+      "paired": {
+        "selection": "rule-v1 question-only operation candidates; unresolved operands and parsing failures remain in denominator",
+        "candidate_count": 56,
+        "manifest_count": 100,
+        "unichart": {
+          "overall": {
+            "denominator": 56,
+            "answered": 56,
+            "exact_correct": 33,
+            "relaxed_correct": 36,
+            "exact_accuracy": 0.5892857142857143,
+            "relaxed_accuracy": 0.6428571428571429,
+            "coverage": 1.0
+          },
+          "partitions": {
+            "augmented": {
+              "denominator": 24,
+              "answered": 24,
+              "exact_correct": 20,
+              "relaxed_correct": 20,
+              "exact_accuracy": 0.8333333333333334,
+              "relaxed_accuracy": 0.8333333333333334,
+              "coverage": 1.0
+            },
+            "human": {
+              "denominator": 32,
+              "answered": 32,
+              "exact_correct": 13,
+              "relaxed_correct": 16,
+              "exact_accuracy": 0.40625,
+              "relaxed_accuracy": 0.5,
+              "coverage": 1.0
+            }
+          },
+          "missing_predictions": []
+        },
+        "deplot": {
+          "overall": {
+            "denominator": 56,
+            "answered": 15,
+            "exact_correct": 12,
+            "relaxed_correct": 12,
+            "exact_accuracy": 0.21428571428571427,
+            "relaxed_accuracy": 0.21428571428571427,
+            "coverage": 0.26785714285714285
+          },
+          "partitions": {
+            "augmented": {
+              "denominator": 24,
+              "answered": 8,
+              "exact_correct": 6,
+              "relaxed_correct": 6,
+              "exact_accuracy": 0.25,
+              "relaxed_accuracy": 0.25,
+              "coverage": 0.3333333333333333
+            },
+            "human": {
+              "denominator": 32,
+              "answered": 7,
+              "exact_correct": 6,
+              "relaxed_correct": 6,
+              "exact_accuracy": 0.1875,
+              "relaxed_accuracy": 0.1875,
+              "coverage": 0.21875
+            }
+          },
+          "missing_predictions": []
+        }
+      }
+    },
+    "deplot": {
+      "model": "deplot",
+      "run": {
+        "model": "deplot",
+        "checkpoint": {
+          "id": "google/deplot",
+          "revision": "6e76d62430da16986be3426bae32301fb9115397",
+          "license": "apache-2.0"
+        },
+        "config": {
+          "schema_version": 1,
+          "seed": 42,
+          "download_limit_bytes": 10000000000,
+          "chartqa_revision": "044eabfc306abfe9340c5741f0093aefc5973d06",
+          "vistext_revision": "24df7d32a39652c375b821f00f77845fb62d28ee",
+          "questions_per_partition": 50,
+          "training_charts": 20,
+          "model_seconds": 1500,
+          "total_gpu_seconds": 3600,
+          "num_beams": 4,
+          "unichart_max_new_tokens": 128,
+          "deplot_max_new_tokens": 512,
+          "models": {
+            "unichart": {
+              "id": "ahmed-masry/unichart-chartqa-960",
+              "revision": "e5eb1e52c1d775e0f3febaddc7fc3559e80cb989",
+              "license": "gpl-3.0"
+            },
+            "deplot": {
+              "id": "google/deplot",
+              "revision": "6e76d62430da16986be3426bae32301fb9115397",
+              "license": "apache-2.0"
+            }
+          }
+        },
+        "records_sha256": "fcfcaec480cd0977ac5a79a8bd671aa3afec0fa9166af1a6ccbc2a37dd93d5fd",
+        "manifest_sha256": "134639355f93393a9006f36fdb290100f1639a185681e53be2ebd44be79d3cc1",
+        "rule_version": "1.0",
+        "rules_sha256": "a615be2714d65b3fb1d069ab316dae4cac742a5b3b1de9d6cd6687731655990f",
+        "complete": true,
+        "processed": 100,
+        "expected": 100,
+        "evidence_localization": null,
+        "calibrated_confidence": null,
+        "kind": "real_model_inference",
+        "implementation_sha256": {
+          "models.py": "6a6a18717d87b2da49f67a7e6c64f7cf97b9d94702b529764a29354a2f98e28c",
+          "runner.py": "6cf983fd816baaa00d04df7a601c2527e5e89b3b9984712d03389d6246e34fbc",
+          "reasoning.py": "a615be2714d65b3fb1d069ab316dae4cac742a5b3b1de9d6cd6687731655990f"
+        },
+        "prompt_font": {
+          "source": "C:\\Windows\\Fonts\\arial.ttf",
+          "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+          "note": "Locally installed font; not downloaded or redistributed"
+        },
+        "precision": "torch.float16",
+        "precision_fallback": null,
+        "peak_allocated_bytes": 1310962688,
+        "peak_reserved_bytes": 1461714944,
+        "elapsed_seconds": 471.10999999998603
+      },
+      "overall": {
+        "denominator": 100,
+        "answered": 15,
+        "exact_correct": 12,
+        "relaxed_correct": 12,
+        "exact_accuracy": 0.12,
+        "relaxed_accuracy": 0.12,
+        "coverage": 0.15
+      },
+      "partitions": {
+        "augmented": {
+          "denominator": 50,
+          "answered": 8,
+          "exact_correct": 6,
+          "relaxed_correct": 6,
+          "exact_accuracy": 0.12,
+          "relaxed_accuracy": 0.12,
+          "coverage": 0.16
+        },
+        "human": {
+          "denominator": 50,
+          "answered": 7,
+          "exact_correct": 6,
+          "relaxed_correct": 6,
+          "exact_accuracy": 0.12,
+          "relaxed_accuracy": 0.12,
+          "coverage": 0.14
+        }
+      },
+      "missing_predictions": [],
+      "scoring_sha256": "c496ac0727824638f29d2a255cef1d851682a2857570da6f507277992cd656b3",
+      "metric_definition": {
+        "exact": "case-sensitive equality after trimming outer whitespace",
+        "relaxed": "Pix2Struct official ChartQA relaxed_correctness: percent-to-fraction conversion, <=5% relative error, lowercase string fallback for zero/nonnumeric targets",
+        "source": "https://github.com/google-research/pix2struct/blob/main/pix2struct/metrics.py"
+      },
+      "latency": {
+        "count": 100,
+        "median_seconds": 3.7419999999692664,
+        "p95_seconds": 12.578000000095926,
+        "includes": "per-question preprocessing, decoding, and executor; cached extraction explicitly marked"
+      },
+      "numeric_extraction": {
+        "alignment": "exact case-insensitive headers and row order; percentages in percentage points",
+        "aligned_tables": 58,
+        "evaluated_tables": 96,
+        "aligned_numeric_cells": 757,
+        "missing_numeric_cells": 0,
+        "mae": 15.495660155848958,
+        "units": "mixed source units; conditional on parsed cells; descriptive only, not a normalized cross-chart score",
+        "aggregation": "unique image SHA256, each chart once",
+        "per_image": {
+          "62468ff48374c1093b543816ff05c570eb618c601fe9aee64ddb3b89ad4f39d9": {
+            "record_id": "chartqa:val:human:865",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 18,
+            "missing_numeric_cells": 0
+          },
+          "2b947c3c17fd133dc183626cce18f4564a71a045aa2d679c8366d8539bbf8b1c": {
+            "record_id": "chartqa:val:human:78",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "f9bd95028e2a72d8ae250053f4f58b7f26a17586998256dad824b8cb6628867e": {
+            "record_id": "chartqa:val:human:678",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 6,
+            "missing_numeric_cells": 0
+          },
+          "7e3dfb8e42bd7d12e66c379f3fa2a347d26ea994e770c6686f9763a130676898": {
+            "record_id": "chartqa:val:human:698",
+            "status": "aligned",
+            "mae": 0.1875,
+            "cells": 32,
+            "missing_numeric_cells": 0
+          },
+          "2214be3432434e58108e147a7c7a606e4cda5ee7b0d0127752aa47d49155597e": {
+            "record_id": "chartqa:val:human:6",
+            "status": "aligned",
+            "mae": 28.166666666666668,
+            "cells": 6,
+            "missing_numeric_cells": 0
+          },
+          "df8dcf8e6500207f4e4443d0c898206b5f301eb55e5fbd97e3d5b667738ed8de": {
+            "record_id": "chartqa:val:human:462",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "78a5b3f39650780107280137e3dad2b6cd81bc84801e7131b3a6da686bb988ed": {
+            "record_id": "chartqa:val:human:391",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "21498bd7fd4d9688a8c6b9a95d8464e2d11c34e0d230c89499865c66546a7e02": {
+            "record_id": "chartqa:val:human:617",
+            "status": "aligned",
+            "mae": 0.42857142857142855,
+            "cells": 14,
+            "missing_numeric_cells": 0
+          },
+          "8baebf2c9fa4ce3effc8b013b9734f7fd8ff3d63bd347c1fc58358b09eace0e1": {
+            "record_id": "chartqa:val:human:725",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 12,
+            "missing_numeric_cells": 0
+          },
+          "f632ceff74db37d891ffad40c5369b67cab0c842175527cb89b693a9b9dee697": {
+            "record_id": "chartqa:val:human:714",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "d447354f0e12a73a263fc44fbb313ff8b0f2711dfb1a1a0a3337fb7e9815af81": {
+            "record_id": "chartqa:val:human:88",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 5,
+            "missing_numeric_cells": 0
+          },
+          "542db6b22adc16f108e351842459eb2f94544bfa66e7cc418daf7dcb92095f4e": {
+            "record_id": "chartqa:val:human:19",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "9445ccb32427ae85c22c88b780c9ed1cd742fea0669de440d05762a62dcdadf0": {
+            "record_id": "chartqa:val:human:121",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 7,
+            "missing_numeric_cells": 0
+          },
+          "c07738767d83bc6f0417d911d897ea15abed280797af41a8e61839f95916a596": {
+            "record_id": "chartqa:val:human:951",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "7f0bd7ef58ab88e6ae2ce082d0ba769448b0e2e81004a3ae1451061a217ccb0a": {
+            "record_id": "chartqa:val:human:443",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "0552ecd9e3a1458b423ef5c0a90e84513f60c0aa9fb5dd265bc3f13541868e08": {
+            "record_id": "chartqa:val:human:104",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 3,
+            "missing_numeric_cells": 0
+          },
+          "b6007218983a378341b3b1eb1d13c68044495804ffaa648cdd8a698dc20010ec": {
+            "record_id": "chartqa:val:human:828",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "c930a8cb4fbf8016e8d64dc0fdcd69ca32c3691daea8113f976bd96652fd44b1": {
+            "record_id": "chartqa:val:human:0",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "8e52c9246df936273627135b26e67d3068f5ba9367b9c6553e34a1591abb0458": {
+            "record_id": "chartqa:val:human:448",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "69c3ddefabacee26d70c1a99436499f0fc6b2d0e981b0f0fc5efca712f0656e9": {
+            "record_id": "chartqa:val:human:190",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "6cef420192b9d1897ffe6f2e0fc75390bac286b34516a63bfcb9a86aaea3dc28": {
+            "record_id": "chartqa:val:human:393",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "3d5054c18ac31106f94616f472a43ed176e388d0560ffaad59f82e14035a510d": {
+            "record_id": "chartqa:val:human:629",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "c946d06bd8d95be9f41ca6230c025883bde1a7c81f65c19fee54ccb3f0379985": {
+            "record_id": "chartqa:val:human:235",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "64cc7967c77f22bcf4cac9137265591ef08cb524de44f6b0efad58ee91d7fbb4": {
+            "record_id": "chartqa:val:human:748",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 6,
+            "missing_numeric_cells": 0
+          },
+          "5d69b659fcebd0a4a42aec59cfd88f3611685e5f2b82ae46027a878e8678a060": {
+            "record_id": "chartqa:val:human:208",
+            "status": "aligned",
+            "mae": 0.733473797766235,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "74d7a2bc8ac2cf9455d882ce816a363ef099bf314c870f15b934b437f0df96aa": {
+            "record_id": "chartqa:val:human:182",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "695eb7c4799297733067c902f2af318ffe1b9f71cff24bfb100715f8896c5f8d": {
+            "record_id": "chartqa:val:human:824",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 18,
+            "missing_numeric_cells": 0
+          },
+          "eb395f89263102372563f0a8598ca8667a9fa2f1549e08fe1ae2feea47a40fd4": {
+            "record_id": "chartqa:val:human:357",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "28727f59dd0a124f0acbef9570a581bc3ef5dcb0721f8997f987bc07eb645cb7": {
+            "record_id": "chartqa:val:human:850",
+            "status": "aligned",
+            "mae": 0.16666666666666666,
+            "cells": 30,
+            "missing_numeric_cells": 0
+          },
+          "074cf176941282a7fd31e00d61bcfa4854af873d6fb0bfb3ecc90621673b0a72": {
+            "record_id": "chartqa:val:human:582",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "ff335eb328c490643851c5830a07e6ce0babbf503fe48f17ab912e7941ed15fe": {
+            "record_id": "chartqa:val:human:343",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 8,
+            "missing_numeric_cells": 0
+          },
+          "85563ad53a309384f7e13ae4b049684fb0a01407279d951f6a6b2fbdcd014c67": {
+            "record_id": "chartqa:val:human:789",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 14,
+            "missing_numeric_cells": 0
+          },
+          "82e00ad17a2309a1618c9872204aad413f010937a6cb401cdeed67cc0e70db76": {
+            "record_id": "chartqa:val:human:516",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 5,
+            "missing_numeric_cells": 0
+          },
+          "7b688d37a9272f20cb0888393d8052f7748ee2ffed1b39e0507198715d829616": {
+            "record_id": "chartqa:val:human:529",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 7,
+            "missing_numeric_cells": 0
+          },
+          "d4425aa47cac72ef421454a463783bb286a449d80471ee3a79cd870bb2302127": {
+            "record_id": "chartqa:val:human:154",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 3,
+            "missing_numeric_cells": 0
+          },
+          "6c37c6bad96ae4aafe68b93931fb3da10a4f23d441f23ddbb0752f1b9dd8f6b4": {
+            "record_id": "chartqa:val:human:752",
+            "status": "aligned",
+            "mae": 0.009696969696969695,
+            "cells": 33,
+            "missing_numeric_cells": 0
+          },
+          "74bc5c8b2b494dfe871995509ccc79e4b95b0fca1114daadeb79cd6e5d65554d": {
+            "record_id": "chartqa:val:human:843",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 12,
+            "missing_numeric_cells": 0
+          },
+          "a219e9cbbbf5d9970fddac8a5fcf26f6cb0ffc29a4aba4e48e794074dc28b818": {
+            "record_id": "chartqa:val:human:618",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "f492ce27e98307245808508c9ec4f70c3bb3487804c92ab421d53d4eee82d11d": {
+            "record_id": "chartqa:val:human:459",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "73badca0e5996f8cad29e59e660d2497af7aa55ceeff57ab6a84ae45dbd16e83": {
+            "record_id": "chartqa:val:human:702",
+            "status": "aligned",
+            "mae": 0.16666666666666666,
+            "cells": 24,
+            "missing_numeric_cells": 0
+          },
+          "e7d3d8453d26c16b989520a896521ecebc7d9653412a4999ffb5bfe3d256a887": {
+            "record_id": "chartqa:val:human:377",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "76001a1811515c1f6e0efb274a842f4a2c955153a3bd6ecec8aceecad0c9dcef": {
+            "record_id": "chartqa:val:human:792",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 8,
+            "missing_numeric_cells": 0
+          },
+          "63f9b5e9ae3274ca5a5ae23bcabf8bc43f3b06dc20b82a7f554d911a545dddc3": {
+            "record_id": "chartqa:val:human:354",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "5b80ddb5419f073a1e448234f510cb2ae8750e269b620ca0a686f36a9c4f47b0": {
+            "record_id": "chartqa:val:human:769",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 27,
+            "missing_numeric_cells": 0
+          },
+          "da9f3b19887f49c13b1ed98041b2f7dbbe0d63431d8ff5934c8252f7cfaafe5d": {
+            "record_id": "chartqa:val:human:812",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 16,
+            "missing_numeric_cells": 0
+          },
+          "93906db9ea4543a2051affad7bfedbe9eb984c836f9a920e9e8958998999a2a9": {
+            "record_id": "chartqa:val:human:818",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 22,
+            "missing_numeric_cells": 0
+          },
+          "97a2f03c395272176e53e3e96def08e6fe4fee6e234ddfc75c83fd07f43c9aa0": {
+            "record_id": "chartqa:val:human:15",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "deab1c00d99cd8c2501e07a55600731de718b759d8b8c9d6cae192a0c9c13ced": {
+            "record_id": "chartqa:val:human:601",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "64ee9b26f2e5b0cfde5404ba1803d12881a085d6bb4530ec083aa8697fdf9487": {
+            "record_id": "chartqa:val:augmented:849",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "350b53a34d9de1e91c24b830c76bb3cefa8c791ee25f2d61b3ceea1e6d5851ff": {
+            "record_id": "chartqa:val:augmented:721",
+            "status": "aligned",
+            "mae": 158.27354838709675,
+            "cells": 31,
+            "missing_numeric_cells": 0
+          },
+          "5511303ec8668237a9b1a27130e15a5316908313a191c5a4db35917a3916b967": {
+            "record_id": "chartqa:val:augmented:368",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "718c28ca64775fe27883a79e07465dbdd54887019d4cf0d30d75a82382f618ee": {
+            "record_id": "chartqa:val:augmented:802",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "c26621afad98c35ee6decc513b8c3b41664db0c3240c5c10a4d233f2dd2b6b26": {
+            "record_id": "chartqa:val:augmented:743",
+            "status": "aligned",
+            "mae": 0.3,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "a38060756b373cb134572d6cf36f7f04321a9844cffb9a14d297e66aac63f833": {
+            "record_id": "chartqa:val:augmented:308",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "e5a5036b345ac10784913665220d6856cace6b8a9b586f1ad562a1a5b9ae1605": {
+            "record_id": "chartqa:val:augmented:420",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "a3b1449ac9553107750ab30ee65ac8b6e38ed752a3b8923cfb944cfe1574cfc3": {
+            "record_id": "chartqa:val:augmented:401",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 3,
+            "missing_numeric_cells": 0
+          },
+          "03d7a42513cae3c5ae8a87c6de62c81369febd9adb18a35c4f486b2f33541a58": {
+            "record_id": "chartqa:val:augmented:470",
+            "status": "aligned",
+            "mae": 0.30000000000000004,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "aea2efbdc61a01916dfae17b922ede4671adc6b9d3335cf226da886aac66484f": {
+            "record_id": "chartqa:val:augmented:301",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "8bbb87d301745d062becbf2487a35a049f1cc2b5b1a165e9f32480da7da9daff": {
+            "record_id": "chartqa:val:augmented:932",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "dc8b6a17fe7c9c03ed4125e3af3eefe6c0d1e86fd61c95355c3c279ed1b97fed": {
+            "record_id": "chartqa:val:augmented:221",
+            "status": "aligned",
+            "mae": 194.7058823529412,
+            "cells": 34,
+            "missing_numeric_cells": 0
+          },
+          "767b48a99f928c07bffcdd96654215cf753e6992d5ed383a979a86cb3627d153": {
+            "record_id": "chartqa:val:augmented:303",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "85dafc6beabb206918507200f8fcc28547239702364b27f79c6c94b2c82eea59": {
+            "record_id": "chartqa:val:augmented:90",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "f3a2066e575b575ea646ab1d75593b8af845b021e9703016d536be6196d079b6": {
+            "record_id": "chartqa:val:augmented:411",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 29,
+            "missing_numeric_cells": 0
+          },
+          "584628580b799acfb33610eeb0b8eae5160529f7aad7f8c17a41a69297a8224e": {
+            "record_id": "chartqa:val:augmented:224",
+            "status": "aligned",
+            "mae": 0.0036363636363636364,
+            "cells": 22,
+            "missing_numeric_cells": 0
+          },
+          "302b38e9957d5033eafc305cd60a7d531d903ef3097f21bbc26d70cdb3863566": {
+            "record_id": "chartqa:val:augmented:129",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 18,
+            "missing_numeric_cells": 0
+          },
+          "76aa742897a7f41995c3f2db6bbcbdc22e56781d7058990dbc60c2d166dbe7c6": {
+            "record_id": "chartqa:val:augmented:888",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "9256fc7eee5294d3cd40c1a5677c0a93aed12ce9c4c33b09a1adc58ebee004ce": {
+            "record_id": "chartqa:val:augmented:56",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "4e649eacbc1e19b02818c9e382e6cd46bad9dadab34c94efa21cd81dca9f3604": {
+            "record_id": "chartqa:val:augmented:279",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 5,
+            "missing_numeric_cells": 0
+          },
+          "4ef9ba5f8c584d5af77cc9905d3869bdd49e480c3c88ead175f7fbc6169a3641": {
+            "record_id": "chartqa:val:augmented:287",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "24427db4bb50dad497469b3a06dcf371e3fcc95235cbf747d59fbbe482ed410d": {
+            "record_id": "chartqa:val:augmented:529",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 11,
+            "missing_numeric_cells": 0
+          },
+          "7aef05e3a81b3038f25c0be60ee4fa24aaa55f92876582cb8bdf2687170524eb": {
+            "record_id": "chartqa:val:augmented:289",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 16,
+            "missing_numeric_cells": 0
+          },
+          "586697136b84f42d575df369f29d3bfc96411d54915f4aa7eea1f7cc105b3760": {
+            "record_id": "chartqa:val:augmented:143",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "cc96bc5774e619578fd213f21ae741340696af5c782c8fd78508370010232dd6": {
+            "record_id": "chartqa:val:augmented:540",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "11f43502f30c2e1bca9d8c702fe0b5052ef80a703588080e968253d389788082": {
+            "record_id": "chartqa:val:augmented:821",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "50688eb42abc2095bd7996e4d08411e668aeb1288343b3a9e7378b3d647bc03e": {
+            "record_id": "chartqa:val:augmented:547",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "dd720cc3da29cf293682e79509f5089a67e203a5f575c754283db89f9fa0e5f8": {
+            "record_id": "chartqa:val:augmented:192",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "c3fa80452f42e526672a3a5bcd608869629da56c9d824f14520b57a5caeba4d2": {
+            "record_id": "chartqa:val:augmented:835",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 10,
+            "missing_numeric_cells": 0
+          },
+          "e4bfcfa015131ae419ea58fc87efd4ad13ce4cc229e915fe12ac208082ee57f7": {
+            "record_id": "chartqa:val:augmented:270",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 11,
+            "missing_numeric_cells": 0
+          },
+          "e30f4955d15f79cab73fb474c31e333ced71afb451862fe4ad5aa608533de424": {
+            "record_id": "chartqa:val:augmented:905",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "21a4e5d97f445a8ee3148810d023e08403215c251ad5cdeaaf6ac6186739c066": {
+            "record_id": "chartqa:val:augmented:163",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "f4a42b5241f3877e634273c46e8f65dda632facede1dbe8c9b4fb96b95c4552a": {
+            "record_id": "chartqa:val:augmented:86",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 9,
+            "missing_numeric_cells": 0
+          },
+          "a3191bf3dd3f86e12e5203e58db848ff0bae65c8086a33667162a4ce7548de88": {
+            "record_id": "chartqa:val:augmented:0",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 13,
+            "missing_numeric_cells": 0
+          },
+          "32e108741694de1d5d981f1411f2c1cc2ccd0101040080637cb00c75bcf304d2": {
+            "record_id": "chartqa:val:augmented:110",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 4,
+            "missing_numeric_cells": 0
+          },
+          "167cab92cb5a5a76f339c9b77155bfb3ae13e9fa62603edadad05949ef035bfc": {
+            "record_id": "chartqa:val:augmented:622",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 22,
+            "missing_numeric_cells": 0
+          },
+          "53a91790b60c929e71aa1847f110a29b1044ae2e32bc4c59ac24995aab795286": {
+            "record_id": "chartqa:val:augmented:560",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 15,
+            "missing_numeric_cells": 0
+          },
+          "a57fe9cebe7b3231336df7044888789c252d4cf85ec81aa598dd5cb1718b1e0e": {
+            "record_id": "chartqa:val:augmented:193",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 2,
+            "missing_numeric_cells": 0
+          },
+          "7072b8865cf5f29335486053eca5019e670b715786bccb2bf1124692ce3a996f": {
+            "record_id": "chartqa:val:augmented:910",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "53b078752514f70ba5b36c3a2f8affa15ca4af06b5da137b6191cc0180c9ac13": {
+            "record_id": "chartqa:val:augmented:891",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 9,
+            "missing_numeric_cells": 0
+          },
+          "6508e7619ae6f503c55c938392df034b0289950bb9a8f8a14d4be18de889d3fe": {
+            "record_id": "chartqa:val:augmented:908",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 6,
+            "missing_numeric_cells": 0
+          },
+          "206863a653d27822393d9bf64e17b61f37c8a30c5d6d287ead12c91c17ff4a2b": {
+            "record_id": "chartqa:val:augmented:838",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "81c4d05342363f7ef9b8fcfe775712dcae2d4a077f4d0184fe38e6b93f3628d2": {
+            "record_id": "chartqa:val:augmented:939",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "4e291821c1d792a0ac7fa9f29da5cd5b95bc66f0eb68b911cb80fabbbce90022": {
+            "record_id": "chartqa:val:augmented:476",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 14,
+            "missing_numeric_cells": 0
+          },
+          "2797dd97c9eba9ea4ba3815a755431a06d4d97944b5b394513429221aedae5a3": {
+            "record_id": "chartqa:val:augmented:426",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "9b40d9fdac1c57832871161743d3876ce226640bff23eb4ef65c1d4278a01aed": {
+            "record_id": "chartqa:val:augmented:883",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 5,
+            "missing_numeric_cells": 0
+          },
+          "bc71e7126f67f6ff79843371ef2511bd03ccb166d722a547ffe71be66e3abaa7": {
+            "record_id": "chartqa:val:augmented:50",
+            "status": "unaligned",
+            "mae": null,
+            "cells": 0
+          },
+          "61ed65ec3b9468afa32fb7118e5e07f04be94159b039e57ffd04bf41bded56bc": {
+            "record_id": "chartqa:val:augmented:225",
+            "status": "aligned",
+            "mae": 0.0,
+            "cells": 12,
+            "missing_numeric_cells": 0
+          }
+        }
+      },
+      "paired": {
+        "selection": "rule-v1 question-only operation candidates; unresolved operands and parsing failures remain in denominator",
+        "candidate_count": 56,
+        "manifest_count": 100,
+        "deplot": {
+          "overall": {
+            "denominator": 56,
+            "answered": 15,
+            "exact_correct": 12,
+            "relaxed_correct": 12,
+            "exact_accuracy": 0.21428571428571427,
+            "relaxed_accuracy": 0.21428571428571427,
+            "coverage": 0.26785714285714285
+          },
+          "partitions": {
+            "augmented": {
+              "denominator": 24,
+              "answered": 8,
+              "exact_correct": 6,
+              "relaxed_correct": 6,
+              "exact_accuracy": 0.25,
+              "relaxed_accuracy": 0.25,
+              "coverage": 0.3333333333333333
+            },
+            "human": {
+              "denominator": 32,
+              "answered": 7,
+              "exact_correct": 6,
+              "relaxed_correct": 6,
+              "exact_accuracy": 0.1875,
+              "relaxed_accuracy": 0.1875,
+              "coverage": 0.21875
+            }
+          },
+          "missing_predictions": []
+        },
+        "unichart": {
+          "overall": {
+            "denominator": 56,
+            "answered": 56,
+            "exact_correct": 33,
+            "relaxed_correct": 36,
+            "exact_accuracy": 0.5892857142857143,
+            "relaxed_accuracy": 0.6428571428571429,
+            "coverage": 1.0
+          },
+          "partitions": {
+            "augmented": {
+              "denominator": 24,
+              "answered": 24,
+              "exact_correct": 20,
+              "relaxed_correct": 20,
+              "exact_accuracy": 0.8333333333333334,
+              "relaxed_accuracy": 0.8333333333333334,
+              "coverage": 1.0
+            },
+            "human": {
+              "denominator": 32,
+              "answered": 32,
+              "exact_correct": 13,
+              "relaxed_correct": 16,
+              "exact_accuracy": 0.40625,
+              "relaxed_accuracy": 0.5,
+              "coverage": 1.0
+            }
+          },
+          "missing_predictions": []
+        }
+      }
+    }
+  },
+  "oracle": {
+    "kind": "oracle_reference_table_diagnostic_not_model_performance",
+    "overall": {
+      "denominator": 100,
+      "answered": 14,
+      "exact_correct": 11,
+      "relaxed_correct": 11,
+      "exact_accuracy": 0.11,
+      "relaxed_accuracy": 0.11,
+      "coverage": 0.14
+    },
+    "partitions": {
+      "augmented": {
+        "denominator": 50,
+        "answered": 8,
+        "exact_correct": 6,
+        "relaxed_correct": 6,
+        "exact_accuracy": 0.12,
+        "relaxed_accuracy": 0.12,
+        "coverage": 0.16
+      },
+      "human": {
+        "denominator": 50,
+        "answered": 6,
+        "exact_correct": 5,
+        "relaxed_correct": 5,
+        "exact_accuracy": 0.1,
+        "relaxed_accuracy": 0.1,
+        "coverage": 0.12
+      }
+    },
+    "missing_predictions": []
+  },
+  "repeat_comparison": {
+    "unichart": {
+      "records": 100,
+      "raw_outputs_equal": 100,
+      "answers_equal": 100,
+      "statuses_equal": 100
+    },
+    "deplot": {
+      "records": 100,
+      "raw_outputs_equal": 100,
+      "answers_equal": 100,
+      "statuses_equal": 100
+    }
+  },
+  "download_accounted_bytes": 5712639877,
+  "session_seconds": 1038.6729999999516,
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "D:\\SenseGraph\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "transformers": "4.57.3",
+      "numpy": "2.4.6",
+      "Pillow": "13.0.0",
+      "sentencepiece": "0.2.2",
+      "pytest": "9.2.0"
+    },
+    "cuda_available": true,
+    "torch_cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "cuda_tensor_check": true,
+    "nvidia_smi": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 621.01"
+  },
+  "deplot_statuses": {
+    "unsupported": 77,
+    "ok": 15,
+    "error": 8
+  },
+  "deplot_errors": {
+    "ValueError: Ragged predicted table": 6,
+    "ValueError: Generation stopped before EOS; output retained but not scored as an answer": 2
+  }
+}

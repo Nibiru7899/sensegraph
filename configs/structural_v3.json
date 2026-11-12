@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "seed": 314159,
+  "count": 2000,
+  "output": "data/synthetic/v3",
+  "splits": {
+    "train": 1400,
+    "val": 300,
+    "test": 300
+  },
+  "chart_types": [
+    "bar",
+    "grouped_bar",
+    "line"
+  ],
+  "resolutions": [
+    [
+      480,
+      360
+    ],
+    [
+      640,
+      480
+    ],
+    [
+      800,
+      500
+    ]
+  ],
+  "dpi": [
+    80,
+    100
+  ],
+  "category_counts": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "series_counts": [
+    2,
+    3
+  ],
+  "value_ranges": [
+    [
+      -50,
+      150
+    ],
+    [
+      0,
+      100
+    ],
+    [
+      -100,
+      100
+    ]
+  ],
+  "templates": {
+    "train": [
+      {
+        "id": "train_sans",
+        "font": "DejaVu Sans",
+        "palette": [
+          "#285f9e",
+          "#b74b36",
+          "#4c8755"
+        ],
+        "background": "#ffffff",
+        "grid": true,
+        "layout": [
+          0.17,
+          0.2,
+          0.78,
+          0.64
+        ],
+        "rotation": 0
+      },
+      {
+        "id": "train_serif",
+        "font": "DejaVu Serif",
+        "palette": [
+          "#6c5093",
+          "#267b77",
+          "#b17a30"
+        ],
+        "background": "#f7f5ed",
+        "grid": false,
+        "layout": [
+          0.19,
+          0.23,
+          0.75,
+          0.6
+        ],
+        "rotation": 25
+      },
+      {
+        "id": "train_sans_warm",
+        "font": "DejaVu Sans",
+        "palette": [
+          "#176c62",
+          "#ba6c36",
+          "#65529b"
+        ],
+        "background": "#fffaf0",
+        "grid": false,
+        "layout": [
+          0.16,
+          0.21,
+          0.78,
+          0.63
+        ],
+        "rotation": 10
+      },
+      {
+        "id": "train_serif_cool",
+        "font": "DejaVu Serif",
+        "palette": [
+          "#346e94",
+          "#9f3755",
+          "#617730"
+        ],
+        "background": "#f4f7f8",
+        "grid": true,
+        "layout": [
+          0.18,
+          0.24,
+          0.75,
+          0.6
+        ],
+        "rotation": 20
+      }
+    ],
+    "val": [
+      {
+        "id": "val_mono_holdout",
+        "font": "DejaVu Sans Mono",
+        "palette": [
+          "#9e5430",
+          "#477d5b",
+          "#9a6c9c"
+        ],
+        "background": "#f2f6fa",
+        "grid": true,
+        "layout": [
+          0.23,
+          0.25,
+          0.7,
+          0.57
+        ],
+        "rotation": 30
+      }
+    ],
+    "test": [
+      {
+        "id": "test_serif_holdout",
+        "font": "DejaVu Sans Mono",
+        "palette": [
+          "#ad4f29",
+          "#426f83",
+          "#92528b"
+        ],
+        "background": "#faf3f3",
+        "grid": false,
+        "layout": [
+          0.21,
+          0.27,
+          0.71,
+          0.55
+        ],
+        "rotation": 40
+      }
+    ]
+  },
+  "near_duplicate_hamming_threshold": 4
+}

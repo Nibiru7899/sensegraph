@@ -1,0 +1,20 @@
+{
+  "seed": 20261105,
+  "size": 640,
+  "amp": false,
+  "warmup_epochs": 5,
+  "finetune_epochs": 30,
+  "lr": 0.0003,
+  "backbone_lr": 1e-05,
+  "weight_decay": 0.0001,
+  "accumulation": 8,
+  "clip": 1.0,
+  "collision_limit": 0.05,
+  "score_threshold": 0.25,
+  "decode_threshold": 0.1,
+  "nms_iou": 0.5,
+  "max_proposals": 128,
+  "campaign_seconds": 10000,
+  "validation_reserve_seconds": 180,
+  "weights_path": ".cache/torch/hub/checkpoints/resnet18-f37072fd.pth"
+}

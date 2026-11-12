@@ -1,0 +1,10 @@
+{
+  "seed": 20261105, "size": 640, "warmup_epochs": 5, "finetune_epochs": 30,
+  "lr": 0.0003, "backbone_lr": 0.00001, "weight_decay": 0.0001,
+  "accumulation": 8, "clip": 1.0, "amp": true,
+  "score_threshold": 0.25, "decode_threshold": 0.1, "nms_iou": 0.5,
+  "max_proposals": 128, "smoke_steps": 400, "profile_batches": 20,
+  "collision_limit": 0.01, "gpu_limit_seconds": 3600,
+  "weights_url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+  "weights_path": ".cache/torch/hub/checkpoints/resnet18-f37072fd.pth"
+}
